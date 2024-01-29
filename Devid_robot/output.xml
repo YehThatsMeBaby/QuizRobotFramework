@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240129 14:43:52.664" rpa="false" schemaversion="4">
+<suite id="s1" name="Testrobot" source="d:\Devid_robot\testrobot.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>https://automationexercise.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240129 14:43:52.940" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<status status="PASS" starttime="20240129 14:43:52.939" endtime="20240129 14:43:59.901"/>
+</kw>
+<test id="s1-t1" name="Login with valid info" line="35">
+<kw name="Click Signup/Login Element">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240129 14:43:59.903" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]'.</msg>
+<status status="PASS" starttime="20240129 14:43:59.903" endtime="20240129 14:44:00.927"/>
+</kw>
+<status status="PASS" starttime="20240129 14:43:59.902" endtime="20240129 14:44:00.927"/>
+</kw>
+<kw name="Input Email">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@name="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:44:00.930" level="INFO">Typing text 'mybabyhunni@gmail.com1' into text field '//*[@name="email"]'.</msg>
+<status status="PASS" starttime="20240129 14:44:00.929" endtime="20240129 14:44:01.125"/>
+</kw>
+<status status="PASS" starttime="20240129 14:44:00.928" endtime="20240129 14:44:01.125"/>
+</kw>
+<kw name="Input password">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:44:01.127" level="INFO">Typing text '123456789' into text field '//*[@name="password"]'.</msg>
+<status status="PASS" starttime="20240129 14:44:01.126" endtime="20240129 14:44:01.223"/>
+</kw>
+<status status="PASS" starttime="20240129 14:44:01.126" endtime="20240129 14:44:01.223"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div[1]/div/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240129 14:44:01.225" level="INFO">Clicking button '//*[@id="form"]/div/div/div[1]/div/form/button'.</msg>
+<status status="PASS" starttime="20240129 14:44:01.224" endtime="20240129 14:44:01.897"/>
+</kw>
+<status status="PASS" starttime="20240129 14:44:01.224" endtime="20240129 14:44:01.897"/>
+</kw>
+<doc>Test the login functionality with valid credentials</doc>
+<status status="PASS" starttime="20240129 14:43:59.902" endtime="20240129 14:44:01.897"/>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="PASS" starttime="20240129 14:43:52.669" endtime="20240129 14:44:01.900"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testrobot">Testrobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
